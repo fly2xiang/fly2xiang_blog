@@ -6,7 +6,8 @@
 
 在IE浏览器中可以在“Internet 选项” -> “连接”选项卡 -> “局域网设置”中看到：
 
-![](https://github.com/fly2xiang/fly2xiang_blog/raw/images/pac.png)
+![](https://github.com/fly2xiang/fly2xiang_blog/raw/master/images/pac.png)
+    
 
 PAC一般使用一个proxy.pac文件作为配置，若使用http服务器提供pac文件，建议使用的MIME是`application/x-ns-proxy-autoconfig`。
 
