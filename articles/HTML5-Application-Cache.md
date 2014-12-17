@@ -81,4 +81,4 @@ api/* fallback.php
 
 ## 三、技巧
 
-在 Chrome 中，你可以在设置中选择 「清除浏览器数据...」 或访问 chrome://appcache-internals/ 来清除缓存。
+在 Chrome 中，你可以在设置中选择 「清除浏览器数据...」 或访问 <chrome://appcache-internals/> 来清除缓存。
