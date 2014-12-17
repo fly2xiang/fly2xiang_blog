@@ -35,7 +35,7 @@ api/
 **服务器在发送清单文件时必须使用 text/cache-manifest 的MIME Type。**
 
 如PHP代码：
-``php
+```php
 header('Content-Type: text/cache-manifest');
 ```
 或在Apache服务器中配置：
@@ -81,4 +81,4 @@ api/* fallback.php
 
 ## 三、技巧
 
-在 Chrome 中，你可以在设置中选择 「清除浏览器数据...」 或访问 <chrome://appcache-internals/> 来清除缓存。
+在 Chrome 中，你可以在设置中选择 「清除浏览器数据...」 或访问 [chrome://appcache-internals/](chrome://appcache-internals/) 来清除缓存。
