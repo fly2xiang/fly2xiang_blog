@@ -40,6 +40,7 @@ Server sent-Event 像是long polling的升级版，在客户端发起请求后�
 
 参考以下链接：
 > HTML5 服务器推送事件（Server-sent Events）实战开发: <http://www.ibm.com/developerworks/cn/web/1307_chengfu_serversentevent/>
+
 > SSE: 服务器发送事件: <http://javascript.ruanyifeng.com/htmlapi/eventsource.html>
 
 ## 四、结论
