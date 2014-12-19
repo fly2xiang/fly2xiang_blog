@@ -28,6 +28,7 @@ make
 sudo make install
 ```
 上面configure命令中 ../pcre-8.36 ../zlib-1.2.8 ../ngx_http_substitutions_filter_module/分别是pcre、zlib与ngx_http_substitutions_filter_module的源码路径。
+
 Nginx被默认安装在/usr/local/nginx/目录。
 
 ## 三、使用
@@ -35,24 +36,39 @@ Nginx被默认安装在/usr/local/nginx/目录。
 模块只有两条指令：
 
 **subs_filter_types**
+
 语法: subs_filter_types mime-type [mime-types]
+
 默认: subs_filter_types text/html
+
 适用范围: http, server, location
+
 subs_filter_types指令指定需要替换内容的MIME类型，默认是text/html类型。
+
 **需要注意的是**：如果服务器会对内容进行了gzip压缩，则要加入以下指令使服务器返回未经压缩的内容才能起作用：
 
 ```
 proxy_set_header Accept-Encoding "";
 ```
+
 **subs_filter**
+
 语法: subs_filter 源字符串 替换为的字符串 [gior]
+
 默认: none
+
 使用范围: http, server, location
+
 subs_filter使用直接替换或者正则匹配替换的方式替换。
+
 第三个参数的含义是：
+
 g(默认): 替换所有匹配的字符串
+
 i：区分大小写
+
 o：仅替换首个匹配的字符串
+
 r：使用正则匹配
 
 ## 四、例子
@@ -76,5 +92,6 @@ Nginx Module for Google: <https://github.com/cuber/ngx_http_google_filter_module
 参考链接：
 
 > nginx_substitutions_filter: <https://code.google.com/p/substitutions4nginx/>
+
 > ngx_http_substitutions_filter_module: <https://github.com/yaoweibin/ngx_http_substitutions_filter_module>
 
